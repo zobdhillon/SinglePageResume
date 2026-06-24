@@ -1,0 +1,105 @@
+{
+    "basics": {
+        "name": "Zob Dhillon",
+        "label": "Full Stack Developer",
+        "image": "/images/profile-pic.png",
+        "email": "zobbdhillon@gmail.com",
+        "phone": "",
+        "url": "https://zobdhillon.netlify.app",
+        "summary": "I build end-to-end web applications with Laravel on the backend and Vue, React, and Tailwind on the frontend. I enjoy turning ideas into real, deployed products — from database design to polished UI.",
+        "location": {
+            "address": "",
+            "postalCode": "",
+            "city": "Lahore",
+            "countryCode": "PK",
+            "region": ""
+        },
+        "profiles": [
+            {
+                "network": "GitHub",
+                "username": "zobdhillon",
+                "url": "https://github.com/zobdhillon"
+            }
+        ]
+    },
+    "work": [],
+    "volunteer": [],
+    "education": [
+        {
+            "institution": "University of the Punjab",
+            "url": "",
+            "area": "English",
+            "studyType": "BS",
+            "startDate": "2020-01-01",
+            "endDate": "2024-01-01",
+            "score": "",
+            "courses": []
+        }
+    ],
+    "awards": [],
+    "certificates": [],
+    "publications": [],
+    "skills": [
+        {
+            "name": "Backend",
+            "level": "Intermediate",
+            "keywords": ["Laravel", "PHP", "MySQL", "REST APIs", "Eloquent ORM"]
+        },
+        {
+            "name": "Frontend",
+            "level": "Intermediate",
+            "keywords": [
+                "Vue.js",
+                "React",
+                "Inertia.js",
+                "JavaScript",
+                "Tailwind CSS"
+            ]
+        },
+        {
+            "name": "DevOps & Tools",
+            "level": "Intermediate",
+            "keywords": ["Git", "GitHub", "Linux", "Ubuntu", "Railway", "Nginx"]
+        }
+    ],
+    "languages": [
+        {
+            "language": "Urdu",
+            "fluency": "Native"
+        },
+        {
+            "language": "English",
+            "fluency": "Fluent"
+        }
+    ],
+    "interests": [],
+    "references": [],
+    "projects": [
+        {
+            "name": "Rehearse — AI Conversation Practice",
+            "startDate": "2025-01-01",
+            "endDate": "",
+            "description": "An AI-powered conversation practice app where users rehearse real-world scenarios — job interviews, salary negotiations, client calls — and receive scored feedback. Built with Laravel, Vue 3, Inertia.js, and the Groq API. Deployed on Railway.",
+            "highlights": [
+                "Built a real-time AI conversation engine using Groq API with custom system prompts per scenario",
+                "Designed a scoring system that evaluates clarity, confidence, objective achievement, and adaptability",
+                "Implemented 20 practice scenarios across interviews, career, sales, and leadership categories",
+                "Deployed full-stack on Railway with MySQL, FrankenPHP, and automated migrations"
+            ],
+            "url": "https://rehearse-ai.up.railway.app"
+        },
+        {
+            "name": "DevLogs — Developer Social Platform",
+            "startDate": "2024-01-01",
+            "endDate": "",
+            "description": "A developer-focused social platform for sharing posts, tracking learning progress, setting goals, and exploring resources. Built with Laravel, Blade, Alpine.js, and Tailwind CSS.",
+            "highlights": [
+                "Built full authentication system with public user profiles and personalized dashboards",
+                "Implemented goal tracking, developer resources section, and topics/categories system",
+                "Integrated AI insights feature for developer content",
+                "Designed a dark-themed responsive UI with Alpine.js interactivity"
+            ],
+            "url": "https://devlogs.42web.io"
+        }
+    ]
+}
