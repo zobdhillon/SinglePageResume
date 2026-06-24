@@ -1,8 +1,8 @@
 {
-    "packages": {
-        "php": "8.4"
+    "php": {
+        "version": "8.4"
     },
-    "build": {
+    "install": {
         "commands": [
             "composer install --no-dev --optimize-autoloader",
             "npm ci",
