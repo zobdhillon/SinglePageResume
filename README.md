@@ -4,7 +4,7 @@ A single-page developer resume styled as a VS Code editor. Data lives in a `resu
 
 **The resume is the project.**
 
-[![Live Demo](https://img.shields.io/badge/Live-Demo-4ec9b0?style=flat-square)](https://your-live-url.up.railway.app)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-4ec9b0?style=flat-square)](https://zob-resume.up.railway.app/))
 
 ---
 
