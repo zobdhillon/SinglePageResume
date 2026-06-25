@@ -13,6 +13,10 @@
             href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100' fill='%234ec9b0'><text y='.85em' font-size='65' font-family='monospace' font-weight='bold'>%3E_</text></svg>">
         @vite(['resources/css/app.css', 'resources/js/app.js'])
         <style>
+            @page {
+                margin: 2cm;
+            }
+
             @media print {
                 body {
                     background: #ffffff !important;
@@ -27,6 +31,7 @@
                     background: #ffffff !important;
                     border: none !important;
                     box-shadow: none !important;
+                    padding: 0 !important;
                 }
 
                 .vs-keyword {
@@ -64,22 +69,17 @@
 
                 section {
                     page-break-inside: avoid;
+                    break-inside: avoid;
                 }
 
                 li {
                     page-break-inside: avoid;
+                    break-inside: avoid;
                 }
 
                 h2 {
                     page-break-after: avoid;
-                }
-
-                .print-page {
-                    padding: 20px !important;
-                }
-
-                @page {
-                    margin: 1.5cm;
+                    break-after: avoid;
                 }
             }
         </style>
