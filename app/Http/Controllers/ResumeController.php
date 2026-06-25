@@ -16,4 +16,14 @@ class ResumeController extends Controller
 
         return view('resume', ['resume' => Resume::fromArray($resumeData)]);
     }
+
+    public function print()
+    {
+        $resume = Storage::disk('resumes')->get('resume.json');
+        $resumeData = json_decode($resume, true);
+
+        return view('resume-print', [
+            'resume' => Resume::fromArray($resumeData)
+        ]);
+    }
 }
