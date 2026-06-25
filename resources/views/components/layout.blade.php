@@ -14,13 +14,15 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
         <style>
             @page {
-                margin: 2cm;
+                margin: 1.5cm 2cm;
             }
 
             @media print {
                 body {
                     background: #ffffff !important;
                     color: #1a1a1a !important;
+                    padding: 0 !important;
+                    margin: 0 !important;
                 }
 
                 .no-print {
@@ -31,7 +33,13 @@
                     background: #ffffff !important;
                     border: none !important;
                     box-shadow: none !important;
-                    padding: 0 !important;
+                    padding: 1cm 1.5cm !important;
+                    margin: 0 !important;
+                    max-width: 100% !important;
+                }
+
+                .print-content {
+                    padding-top: 0.5cm !important;
                 }
 
                 .vs-keyword {
@@ -70,6 +78,7 @@
                 section {
                     page-break-inside: avoid;
                     break-inside: avoid;
+                    padding-top: 0.3cm;
                 }
 
                 li {
@@ -126,14 +135,13 @@
                     id="line-numbers"></div>
 
                 {{-- Main content --}}
-                <div class="min-w-0 flex-1 border-l border-vs-border pl-4 sm:pl-6">
+                <div class="min-w-0 flex-1 border-l border-vs-border pl-4 sm:pl-6 print-content">
                     {{ $slot }}
                 </div>
             </div>
         </div>
 
         <script>
-            // Generate line numbers dynamically based on content height
             const gutter = document.getElementById('line-numbers');
             const content = gutter?.nextElementSibling;
             if (gutter && content) {
@@ -146,7 +154,6 @@
                 ).join('');
             }
 
-            // Copy to clipboard on email click
             document.addEventListener('DOMContentLoaded', function() {
                 document.querySelectorAll('[data-copy]').forEach(el => {
                     el.addEventListener('click', function(e) {
