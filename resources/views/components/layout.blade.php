@@ -14,6 +14,7 @@
         @vite(['resources/css/app.css', 'resources/js/app.js'])
         <style>
             @page {
+                size: A4;
                 margin: 1.5cm 2cm;
             }
 
@@ -33,13 +34,21 @@
                     background: #ffffff !important;
                     border: none !important;
                     box-shadow: none !important;
-                    padding: 1cm 1.5cm !important;
+                    padding: 0 !important;
                     margin: 0 !important;
                     max-width: 100% !important;
                 }
 
                 .print-content {
-                    padding-top: 0.5cm !important;
+                    padding-top: 0 !important;
+                    border-left: none !important;
+                }
+
+                section,
+                .print-section {
+                    page-break-inside: avoid;
+                    break-inside: avoid;
+                    padding-top: 0.5cm;
                 }
 
                 .vs-keyword {
@@ -67,7 +76,7 @@
                 }
 
                 .vs-line-num {
-                    color: #aaaaaa !important;
+                    display: none !important;
                 }
 
                 * {
@@ -75,18 +84,13 @@
                     print-color-adjust: exact;
                 }
 
-                section {
-                    page-break-inside: avoid;
-                    break-inside: avoid;
-                    padding-top: 0.3cm;
-                }
-
                 li {
                     page-break-inside: avoid;
                     break-inside: avoid;
                 }
 
-                h2 {
+                h2,
+                h3 {
                     page-break-after: avoid;
                     break-after: avoid;
                 }
