@@ -61,6 +61,26 @@
                     -webkit-print-color-adjust: exact;
                     print-color-adjust: exact;
                 }
+
+                section {
+                    page-break-inside: avoid;
+                }
+
+                li {
+                    page-break-inside: avoid;
+                }
+
+                h2 {
+                    page-break-after: avoid;
+                }
+
+                .print-page {
+                    padding: 20px !important;
+                }
+
+                @page {
+                    margin: 1.5cm;
+                }
             }
         </style>
     </head>
